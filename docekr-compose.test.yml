@@ -2,11 +2,11 @@ sut:
         build: .
         dockerfile: Dockerfile.test
         links:
-                -web
+                - web
 web:
         build: .
         dockerfile: Dockerfile
         links:
-                -redis
+                - redis
 redis:
         image: redis        
